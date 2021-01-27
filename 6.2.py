@@ -15,8 +15,8 @@ if __name__ == '__main__':
         if (item == 0):
             k +=1
     mn = A.index(min(A))
-    l = sum(A[mn:])
-    A.sort()
+    l = sum(A[mn+1:])
+    A.sort(key=abs)
     print(k)
     print(l)
     print(A)
